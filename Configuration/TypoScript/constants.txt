@@ -1,0 +1,17 @@
+plugin.tx_af_menu2thumb {
+	view {
+		# cat=plugin.tx_af_menu2thumb/file; type=string; label=Path to template root (FE)
+		templateRootPath = EXT:af_menu2thumb/Resources/Private/Templates/
+		# cat=plugin.tx_af_menu2thumb/file; type=string; label=Path to template partials (FE)
+		partialRootPath = EXT:af_menu2thumb/Resources/Private/Partials/
+		# cat=plugin.tx_af_menu2thumb/file; type=string; label=Path to template layouts (FE)
+		layoutRootPath = EXT:af_menu2thumb/Resources/Private/Layouts/
+	}
+	persistence {
+		# cat=plugin.tx_af_menu2thumb//a; type=string; label=Default storage PID
+		storagePid =
+	}
+	settings {
+
+	}
+}

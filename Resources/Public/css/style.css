@@ -1,0 +1,17 @@
+#menu2thumbOverview .thumbBoxBox {
+  margin: 1.25em 1.25em 1.25em 1.25em;
+  width: 20em;
+  height: 18em;
+  box-shadow: 0.2em 0.4em 0.5em rgba(0, 0, 0, 0.75); }
+  #menu2thumbOverview .thumbBoxBox img {
+    max-width: 100%;
+    height: 15em; }
+  #menu2thumbOverview .thumbBoxBox .title {
+    font-weight: 600;
+    margin-top: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 1em;
+    color: #FFFFFF; }
+
+/*# sourceMappingURL=style.css.map */

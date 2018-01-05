@@ -1,0 +1,16 @@
+{namespace dl = DasLampe\AfResponsiveImages\ViewHelper}
+
+<div id="menu2thumbOverview" class="row small-up-1 medium-up-2 large-up-3">
+    <f:for each="{menu}" as="menuEntry">
+        <div class="column">
+            <f:link.page pageUid="{menuEntry.uid}">
+                <div class="thumbBox">
+                    <dl:image image="{menuEntry.teaserImage}" />
+                    <div class="title text-center">
+                        {menuEntry.title}
+                    </div>
+                </div>
+            </f:link.page>
+        </div>
+    </f:for>
+</div>

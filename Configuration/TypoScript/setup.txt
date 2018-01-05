@@ -1,0 +1,29 @@
+plugin.tx_af_menu2thumb {
+	view {
+		templateRootPath = {$plugin.tx_af_menu2thumb.view.templateRootPath}
+		partialRootPath = {$plugin.tx_af_menu2thumb.view.partialRootPath}
+		layoutRootPath = {$plugin.tx_af_menu2thumb.view.layoutRootPath}
+	}
+	persistence {
+    	# set to all storage PIDs
+    	storagePid = {$plugin.tx_af_menu2thumb.persistence.storagePid}
+    	recursive = 1
+    	classes {
+        }
+    }
+    features {
+        # uncomment the following line to enable the new Property Mapper.
+        # rewrittenPropertyMapper = 1
+    }
+    settings {
+
+    }
+}
+
+module.tx_af_menu2thumb {
+	settings < plugin.tx_af_menu2thumb.settings
+	persistence < plugin.tx_af_menu2thumb.persistence
+	view < plugin.tx_af_menu2thumb.view
+}
+
+page.includeCSS.afMenu2ThumbCss = EXT:af_menu2thumb/Resources/Public/css/style.css
