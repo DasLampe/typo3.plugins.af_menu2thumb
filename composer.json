@@ -1,0 +1,39 @@
+{
+  "name": "daslampe/af-menu2thumb",
+  "type": "typo3-cms-extension",
+  "description" : "Typo3 Frontend Plugin to display subpage as menu with thumbnail",
+  "homepage": "https://github.com/DasLampe/typo3.plugins.af_menu2thumb",
+  "authors": [
+    {
+      "name": "Andre Flemming",
+      "email": "daslampe@lano-crew.org",
+      "homepage": "https://daslampe.lano-crew.org",
+      "role": "Developer"
+    }
+  ],
+  "license": ["GPL-3.0+"],
+  "keywords": ["TYPO3 CMS", "Subpage", "Menu", "Thumbnail"],
+  "support": {
+    "issues": "https://github.com/DasLampe/typo3.plugins.af_menu2thumb/issues"
+  },
+  "version": "1.0.0",
+  "require": {
+    "typo3/cms": "^7.6.0",
+    "daslampe/af-responsive-images": "^1.0.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "DasLampe\\AfMenu2thumb\\": "Classes/"
+    }
+  },
+  "replace": {
+    "daslampe/af-menu2thumb": "self.version",
+    "af_menu2thumb": "self.version"
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "1.0.x-dev",
+      "dev-development": "1.0.x-dev"
+    }
+  }
+}
